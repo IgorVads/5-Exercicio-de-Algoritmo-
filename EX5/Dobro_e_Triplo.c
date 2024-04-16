@@ -3,15 +3,19 @@
 #include <locale.h>
 
 int main() {
-	setlocale(LC_ALL, "portuguese");
-		float n1,n2,dobro, triplo;
-		printf("Digite o número que deseja dobrar: ");
-		scanf("%f", &n1);
-        printf("Digite o número que deseja triplicar: ");
-		scanf("%f", &n2);
-		dobro = (n1 * 2);
-		triplo = (n2 * 3);
-		printf("O dobro do seu número é: %.2f\n", dobro);
-		printf("O triplo do seu número é: %.2f\n", triplo);
 	
+	setlocale(LC_ALL, "portuguese");
+	
+	float n1,n2;
+		
+	printf("Digite o nÃºmero que deseja dobrar: ");
+		scanf("%f", &n1);
+		
+        printf("Digite o nÃºmero que deseja triplicar: ");
+		scanf("%f", &n2);
+		
+	printf("O dobro do seu nÃºmero Ã©: %.1f\n", n1 * 2);
+	printf("O triplo do seu nÃºmero Ã©: %.1f\n", n2 * 3);
+
+	return(0);
 }
